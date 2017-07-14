@@ -26,7 +26,13 @@ app.get('/Location', (req, res) => {
 });
 
 app.get('/Products', (req, res) => {
-  res.render('ProductPage', productData);
+  res.render('ProductPage', { local: productData });
+});
+
+app.get('/ProductDetail', (req, res) => {
+  res.render('ProductDetailPage', {
+    item: { item: productData[req.query.category][req.query.name], name: req.query.name, category: req.query.category },
+  });
 });
 
 app.listen(3000, () => {
