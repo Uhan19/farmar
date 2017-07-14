@@ -1,0 +1,98 @@
+html {
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0px;
+  color: #424242;
+  padding: 0px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.AboutImage {
+  display: inline-block;
+  width: 25vw;
+  float: left;
+  margin-right: 5vw;
+  margin-top: .5em;
+  margin: .5em 5vw 20vh 0;
+  border-radius: 1em;
+}
+
+.AboutHeading {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.BackgroundImageContainer {
+  width: 100vw;
+  max-width: 100%;
+  overflow: hidden;
+  margin-bottom: 3vh;
+}
+
+.BackgroundImage {
+  width: 100vw;
+  padding: 0px;
+  margin: 0px;
+}
+
+.BodyTitle {
+  margin: auto;
+  text-align: center;
+  padding: 0 0 5vh 0;
+  font-size: 5vh;
+  font-weight: bold;
+}
+
+.BodyText {
+  width: 75vw;
+  margin: auto;
+  padding-bottom: 20vh;
+  line-height: 2em;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.LocationContainer {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.LocationImageContainer {
+  padding: 1% 2% 3% 2%;
+  width: 100%;
+  border-radius: 1em;
+  text-align: center;
+}
+
+.LocationImage {
+  width: 100%;
+}
+
+.LocationImageContainer:hover {
+  background-color: #dedfe0;
+}
+
+.NavbarLink {
+  text-decoration: none;
+  color: #424242;
+  padding: 12px;
+  font-size: 4vh;
+}
+.NavbarLink:hover {
+  text-decoration: underline;
+  text-decoration-color: #e14e4e;
+}
+
+.Selected {
+  text-decoration: underline;
+}
