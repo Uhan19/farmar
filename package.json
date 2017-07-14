@@ -13,6 +13,7 @@
     "pug": "^2.0.0-rc.2"
   },
   "dependencies": {
-    "express": "^4.15.3"
+    "express": "^4.15.3",
+    "pug": "^2.0.0-rc.2"
   }
 }
