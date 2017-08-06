@@ -16,23 +16,28 @@ html
 
     div(class='ProductDetailHeading')
       a(href='/Products')
-        button(class='BackButton') Products List
-      span(class='ProductDetailHistory')= item.category + ' > ' + item.name
+        button(class='BackButton') Back to Products List
 
-    div(class='BodyTitle')= item.name
+    div(class='BodyTitle')= local.name
 
 
 
     div(class='ItemImageContainer')
-      each url in item.item.image
+      each url in local.item.images
         a(class='ItemImageLink' href=url)
           img(class='ItemImage' src=url alt='Grand Topham Ranch')/
-    
+
+    script var getQuantity = function () { console.log('works', local.name); return 'banana';  }
+
+    div(class='InvoiceUIContainer')
+      form(id='InvoiceUIForm') 
+        p(class="InvoiceUILabel") Quantity:
+        input(type="text" id="InvoiceInputQuantity" placeholder="getQuantity(local.name)")
+        p(class="InvoiceUILabel") Notes/Questions:
+        input(type="text" id="InvoiceInputNotes")
+        button(type="button" id="InvoiceSave" class=local.name onclick='getQuantity()') Save!
 
 
-    ul(class='ItemDetails')
-      each info in item.item.information
-        li(class='ItemDetailPoint')= info
 
   link(rel='stylesheet' type='text/css' href='./Home.css')/
   link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans')/

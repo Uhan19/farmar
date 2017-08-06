@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const productData = require('./productData.js');
+const itemHandler = require('./itemHandler.js');
 
 app.use(express.static(path.join(__dirname, '../assets')));
 app.use(express.static(path.join(__dirname, '../public/Home.css')));
@@ -31,8 +32,16 @@ app.get('/Products', (req, res) => {
 
 app.get('/ProductDetail', (req, res) => {
   res.render('ProductDetailPage', {
-    item: { item: productData[req.query.category][req.query.name], name: req.query.name, category: req.query.category },
+    local: {
+      item: productData[req.query.item],
+      name: req.query.item,
+      itemHandler: itemHandler,
+    },
   });
+});
+
+app.get('/Invoice', (req, res) => {
+  //TODO Invoice
 });
 
 app.listen(3000, () => {

@@ -17,12 +17,12 @@ html
     div(class='BodyTitle') Products Page
 
     div(class='ProductsList')
-      each items, category in local
-        ul(class='ProductCategory')= category
-        each item, itemName in items
-          li(class='ProductItemLink')
-            -var url = 'ProductDetail?category=' + category + '&name=' + itemName
-            a(class='ItemLink' href=url)= itemName
+      ul(class='ProductCategory') Products
+      each item, itemName in local
+        li(class='ProductItemLink')
+          a(class='ItemLink' href=url)= itemName
+
+
 
 
   link(rel='stylesheet' type='text/css' href='./Home.css')/
