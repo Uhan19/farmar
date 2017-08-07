@@ -8,6 +8,7 @@ html
       a(class='NavbarLink' href='/Home') Home
       a(class='NavbarLink' href='/Location') Location
       a(class='NavbarLink Selected' href='/Products') Products
+      a(class='NavbarLink Selected' href='/Services') Services
       a(class='NavbarLink' href='/Invoice') Invoice
 
     div(class="BackgroundImageContainer")
@@ -18,8 +19,6 @@ html
         button(class='BackButton') Back to Products List
 
     div(class='BodyTitle')= local.name
-
-
 
     div(class='ItemImageContainer')
       each url in local.item.images

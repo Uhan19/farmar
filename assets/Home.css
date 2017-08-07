@@ -112,6 +112,23 @@ nav {
   width: 93vw;
   margin: auto;
 }
+.ServicesImageContainer {
+  width: 75vw;
+  margin: auto;
+  display: flex;
+  flex-flow: row-wrap;
+}
+.ServicesImage: {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  max-width: 80%;
+}
+#ServicesImageThumbnail: {
+  display: block;
+  max-width: 500px;
+  height: auto;
+}
 .ItemImageContainer {
   display: flex;
   width: 75vw;
