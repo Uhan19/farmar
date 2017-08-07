@@ -19,10 +19,14 @@ html
         button(class='BackButton') Back to Products List
 
     div(class='BodyTitle')= local.name
+    div(class='SelectedItemImageContainer')
+      a(class='ItemImageLink' href='')
+        img(class='SelectedImage' src='' alt='Grand Topham Ranch')
+
 
     div(class='ItemImageContainer')
       each url in local.item.images
-        a(class='ItemImageLink' href=url)
+        div(class='ItemContainer')
           img(class='ItemImage' src=url alt='Grand Topham Ranch')/
 
   link(rel='stylesheet' type='text/css' href='./Home.css')/
