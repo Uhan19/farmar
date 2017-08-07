@@ -26,17 +26,5 @@ html
         a(class='ItemImageLink' href=url)
           img(class='ItemImage' src=url alt='Grand Topham Ranch')/
 
-    script var getQuantity = function () { console.log('works', local.name); return 'banana';  }
-
-    div(class='InvoiceUIContainer')
-      form(id='InvoiceUIForm') 
-        p(class="InvoiceUILabel") Quantity:
-        input(type="text" id="InvoiceInputQuantity" placeholder="getQuantity(local.name)")
-        p(class="InvoiceUILabel") Notes/Questions:
-        input(type="text" id="InvoiceInputNotes")
-        button(type="button" id="InvoiceSave" class=local.name onclick='getQuantity()') Save!
-
-
-
   link(rel='stylesheet' type='text/css' href='./Home.css')/
   link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans')/
