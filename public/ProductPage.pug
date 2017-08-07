@@ -6,9 +6,9 @@ html
   body
     nav
       a(class='NavbarLink' href='/Home') Home
-      a(class='NavbarLink' href='/About') About
       a(class='NavbarLink' href='/Location') Location
       a(class='NavbarLink Selected' href='/Products') Products
+      a(class='NavbarLink' href='/Services') Services
       a(class='NavbarLink' href='/Invoice') Invoice
 
     div(class="BackgroundImageContainer")
@@ -19,6 +19,7 @@ html
     div(class='ProductsList')
       ul(class='ProductCategory') Products
       each item, itemName in local
+        -var url = "/ProductDetail?item=" + itemName
         li(class='ProductItemLink')
           a(class='ItemLink' href=url)= itemName
 
