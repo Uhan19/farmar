@@ -117,18 +117,20 @@ nav {
   width: 75vw;
   margin: auto;
   justify-content: space-between;
+  flex: 1;
+  border: 1px solid red;
 }
 .ItemImage {
   width: auto;
   height: auto;
-  max-width: 30vw;
-  max-height: 30vw;
+  max-width: 100%;
+  max-height: 100%;
   overflow: hidden;
   padding: 3% 3% 3% 3%;
 }
-.ItemImage:hover {
+/*.ItemImage:hover {
   background-color: #dedfe0;
-}
+}*/
 .ItemImageLink {
   margin: 0;
   padding: 0;
