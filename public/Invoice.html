@@ -24,9 +24,22 @@
   <div>
     <p class="BodyTextAbout">
     <img class="AboutImage" src="./Sagi.jpg">
-      <span class="AboutHeading"> Shlomi Amar</span> looks through each invoice and to help determine your needs. <a href="mailto:sosag-exp@hotmail.com?subject=Grand%20Topham%20Ranch%20Invoice%20Request">Send him an email</a> with a list of items to get an invoice, or what kind of farm you are trying to run for advice.
-    </p>
-    <p class="BodyTextAbout">
+
+    <form action="http://localhost:3000/Invoice" method="post" enctype="text/plain">
+      
+      <div>
+        <label for="FromEmail">Your Email: </label>
+        <input name="FromEmail" value="Your Email">
+      </div>
+      
+      <div>
+        <label for="Invoice">Invoice, Questions, Comments</label>
+        <input name="Invoice" value="">
+      </div>
+
+      <button>Send</button>
+    </form>
+
     </p>
   </div>
 </body>

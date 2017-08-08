@@ -3,6 +3,16 @@ const path = require('path');
 const app = express();
 const productData = require('./productData.js');
 const itemHandler = require('./itemHandler.js');
+const env = require('./env.js');
+const email = require('emailjs');
+const server = email.server.connect({
+  user: `${env.GMAIL_USERNAME}`,
+  password: `${env.GMAIL_PASSWORD}`,
+  host: 'smtp.gmail.com',
+  ssl: true
+});
+const bodyParser = require('body-parser');
+app.use(bodyParser.json());
 
 app.use(express.static(path.join(__dirname, '../assets')));
 app.use(express.static(path.join(__dirname, '../public/Home.css')));
@@ -30,10 +40,6 @@ app.get('/Services', (req, res) => {
   res.sendFile(path.join(__dirname + '/../public/Services.html'));
 });
 
-app.get('/Invoice', (req, res) => {
-  res.sendFile(path.join(__dirname + '/../public/Invoice.html'));
-});
-
 app.get('/Products', (req, res) => {
   res.render('ProductPage', { local: productData });
 });
@@ -49,7 +55,31 @@ app.get('/ProductDetail', (req, res) => {
 });
 
 app.get('/Invoice', (req, res) => {
-  //TODO Invoice
+  res.sendFile(path.join(__dirname + '/../public/Invoice.html'));
+});
+
+app.post('/Invoice', (req, res) => {
+  console.log('req', req.params);
+  res.sendFile(path.join(__dirname + '/../public/Invoice.html'));
+  // server.send(
+  //   {
+  //     text: ,
+  //     from: `GTRagsupplies <${env.GMAIL_USERNAME}@gmail.com>`,
+  //     to: `GTRagsupplies <${env.GMAIL_RECEIVER}@gmail.com>`,
+  //     cc: 'else <hschan11@aim.com',
+  //     subject: `Invoice request from ${}`
+  //   },
+  //   (err, message) => {
+  //     if (err) {
+  //       console.log(err);
+  //     }
+  //   }
+  // );
+  // res.redirect('/InvoiceSent');
+});
+
+app.get('/InvoiceSent', (req, res) => {
+  res.sendFile(path.join(__dirname + '/../public/InvoiceSent.html'));
 });
 
 app.listen(3000, () => {
