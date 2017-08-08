@@ -11,6 +11,18 @@ nav {
   display: flex;
   justify-content: space-around;
 }
+@media (max-device-width: 800px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 700px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .AboutImage {
   display: inline-block;
   width: 29vw;
@@ -110,22 +122,10 @@ nav {
   width: 93vw;
   margin: auto;
 }
-.ServicesImageContainer {
-  width: 75vw;
+.ServicesImageThumnbnail {
   margin: auto;
-  display: flex;
-  flex-flow: row-wrap;
-}
-.ServicesImage: {
-  display: flex;
-  flex-grow: 1;
-  flex-shrink: 1;
-  max-width: 80%;
-}
-#ServicesImageThumbnail: {
-  display: block;
-  max-width: 500px;
-  height: auto;
+  width: 50vw;
+  padding: 15vh;
 }
 .ItemContainer {
   overflow: hidden;
