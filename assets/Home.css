@@ -86,9 +86,6 @@ nav {
   text-decoration: underline;
   text-decoration-color: #e14e4e;
 }
-.Selected {
-  text-decoration: underline;
-}
 .ProductsList {
   width: 75vw;
   margin: auto;
@@ -165,6 +162,22 @@ nav {
   font-size: 1.3em;
   list-style: none;
 }
+/*.SelectedImageContainer {
+  margin: auto;
+}*/
+.Selected {
+  text-decoration: underline;
+}
+.SelectedImage {
+  width: 75vw;
+  height: 75vw;
+  display: block;
+  margin: 0 auto;
+}
+.SelectedImageName {
+  text-align: center;
+}
 .SelectedImageContainer {
+  display: flex;
   margin: auto;
 }

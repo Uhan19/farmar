@@ -21,13 +21,14 @@ html
     div(class='BodyTitle')= local.name
     div(class='SelectedItemImageContainer')
       a(class='ItemImageLink' href='')
-        img(class='SelectedImage' src='' alt='Grand Topham Ranch')
-
+        img(class='SelectedImage' src='' alt='')
+      p(class='SelectedImageName')
 
     div(class='ItemImageContainer')
       each url in local.item.images
         div(class='ItemContainer')
-          img(class='ItemImage' src=url alt='Grand Topham Ranch')/
+          img(class='ItemImage' src=url alt=local.name name=local.name)/
+
 
   link(rel='stylesheet' type='text/css' href='./Home.css')/
   link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans')/
