@@ -5,16 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server/server.js",
+    "start": "nodemon server/server.js"
   },
   "author": "Chan Kwon",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^1.11.0",
-    "pug": "^2.0.0-rc.2",
+    "pug": "^2.0.0-rc.2"
   },
   "dependencies": {
     "express": "^4.15.3",
-    "pug": "^2.0.0-rc.2",
-  },
+    "pug": "^2.0.0-rc.2"
+  }
 }

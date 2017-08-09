@@ -6,38 +6,31 @@ html
   body
     nav
       a(class='NavbarLink' href='/Home') Home
-      a(class='NavbarLink' href='/About') About
       a(class='NavbarLink' href='/Location') Location
       a(class='NavbarLink Selected' href='/Products') Products
+      a(class='NavbarLink Selected' href='/Services') Services
       a(class='NavbarLink' href='/Invoice') Invoice
 
     div(class="BackgroundImageContainer")
       img(class='BackgroundImage' src='./backgroundImage.png' alt='Grand Topham Ranch')/
-
     div(class='ProductDetailHeading')
       a(href='/Products')
         button(class='BackButton') Back to Products List
 
     div(class='BodyTitle')= local.name
-
-
+    div(class='SelectedItemImageContainer')
+      a(class='ItemImageLink' href='')
+        img(class='SelectedImage' src='' alt=local.name)
 
     div(class='ItemImageContainer')
       each url in local.item.images
-        a(class='ItemImageLink' href=url)
-          img(class='ItemImage' src=url alt='Grand Topham Ranch')/
-
-    script var getQuantity = function () { console.log('works', local.name); return 'banana';  }
-
-    div(class='InvoiceUIContainer')
-      form(id='InvoiceUIForm') 
-        p(class="InvoiceUILabel") Quantity:
-        input(type="text" id="InvoiceInputQuantity" placeholder="getQuantity(local.name)")
-        p(class="InvoiceUILabel") Notes/Questions:
-        input(type="text" id="InvoiceInputNotes")
-        button(type="button" id="InvoiceSave" class=local.name onclick='getQuantity()') Save!
+          div(class='ItemContainer')
+            img(class='ItemImage' src=url alt=local.name name=local.name)/
 
 
 
   link(rel='stylesheet' type='text/css' href='./Home.css')/
   link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans')/
+
+  script
+    include ./scripts.js
