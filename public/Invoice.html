@@ -21,27 +21,33 @@
     Request an Invoice
   </div>
 
-  <div>
-    <p class="BodyTextAbout">
+  <div class="BodyTextAbout">
     <img class="AboutImage" src="./Sagi.jpg">
 
-    <form action="http://localhost:3000/Invoice" method="post" enctype="text/plain">
-      
-      <div>
-        <label for="FromEmail">Your Email: </label>
-        <input name="FromEmail" value="Your Email">
-      </div>
-      
-      <div>
-        <label for="Invoice">Invoice, Questions, Comments</label>
-        <input name="Invoice" value="">
+    <div class="EmailBody">
+
+    <form class="EmailForm" action="http://localhost:3000/Invoice" method="post" enctype="application/x-www-form-urlencoded">  
+
+      <div class="EmailField">
+        <input class="EmailInput" name="FromEmail" value=" Your Email">
       </div>
 
-      <button>Send</button>
+      <div class="EmailField">
+        <input class="EmailCheckBox" type="checkbox" name="CCOption" value="true">
+        <label for="CCOption">Send a copy to my Email</label>
+      </div>
+
+      <div class="EmailField">
+        <textarea class="EmailBodyInput" name="EmailBody" placeholder=" Invoice, Questions, Comments..."></textarea>
+      </div>
+
+      <button class="EmailInput HomeLink" style="border: 0; margin: auto;">Send</button>
+    
     </form>
-
-    </p>
+    </div>
+    
   </div>
+
 </body>
 
 <link rel="stylesheet" type="text/css" href="./Home.css" />

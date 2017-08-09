@@ -1,9 +1,9 @@
-Products
-  -Needs to be templated
-  -The page given is dynamic based on the items data
-Invoice
-  -has to respond to wishlist
-  -wishlist is on local storage
+Emailer works
+Parameters do not
+Invoice Sent Page
+Pictures change
+Upload rest into CDN
 
-  IDEA: request to invoice has wishlist as params, server returns based on that
-  
+Sam is on the Products Page
+
+Deploy
