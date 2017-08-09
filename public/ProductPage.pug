@@ -20,8 +20,10 @@ html
       ul(class='ProductCategory') Products
       each item, itemName in local
         -var url = "/ProductDetail?item=" + itemName
-        li(class='ProductItemLink')
-          a(class='ItemLink' href=url)= itemName
+        div(class='ProductItemContainer')
+          img(class='ProductThumnail' src=item.images[0] alt=itemName)
+          li(class='ProductItemLink')
+            a(class='ItemLink' href=url)= itemName
 
 
 
