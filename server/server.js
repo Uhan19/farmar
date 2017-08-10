@@ -8,7 +8,7 @@ app.use(express.static(path.join(__dirname, '../assets')));
 app.use(express.static(path.join(__dirname, '../public/Home.css')));
 
 app.set('view engine', 'pug');
-app.set('views', './public');
+app.set('views', './public'); //this is reading from public
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname + '/../public/Home.html'));
@@ -26,6 +26,14 @@ app.get('/Location', (req, res) => {
   res.sendFile(path.join(__dirname + '/../public/Location.html'));
 });
 
+app.get('/Services', (req, res) => {
+  res.sendFile(path.join(__dirname + '/../public/Services.html'));
+});
+
+app.get('/Invoice', (req, res) => {
+  res.sendFile(path.join(__dirname + '/../public/Invoice.html'));
+});
+
 app.get('/Products', (req, res) => {
   res.render('ProductPage', { local: productData });
 });
@@ -35,8 +43,8 @@ app.get('/ProductDetail', (req, res) => {
     local: {
       item: productData[req.query.item],
       name: req.query.item,
-      itemHandler: itemHandler,
-    },
+      itemHandler: itemHandler
+    }
   });
 });
 

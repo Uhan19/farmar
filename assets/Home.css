@@ -1,0 +1,189 @@
+html {
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+}
+body {
+  margin: 0px;
+  color: #424242;
+  padding: 0px;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+.AboutImage {
+  display: inline-block;
+  width: 29vw;
+  float: left;
+  margin-right: 5vw;
+  margin-top: .5em;
+  margin: .5em 5vw 20vh 0;
+  border-radius: 1em;
+}
+.AboutHeading {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.BackgroundImageContainer {
+  width: 100vw;
+  max-width: 100%;
+  overflow: hidden;
+  margin-bottom: 3vh;
+}
+.BackgroundImage {
+  width: 100vw;
+  padding: 0px;
+  margin: 0px;
+}
+.BodyTitle {
+  margin: auto;
+  text-align: center;
+  padding: 0 0 5vh 0;
+  font-size: 5vh;
+  font-weight: bold;
+}
+.BodyText {
+  width: 75vw;
+  margin: auto;
+  padding-bottom: 20vh;
+  line-height: 2em;
+  font-size: 1.3em;
+  text-align: center;
+}
+.BodyTextAbout {
+  width: 75vw;
+  margin-left: 10vw;
+  padding-bottom: 20vh;
+  line-height: 2em;
+  font-size: 1.3em;
+}
+.LocationContainer {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.LocationImageContainer {
+  padding: 1% 2% 3% 2%;
+  width: 100%;
+  border-radius: 1em;
+  text-align: center;
+}
+.LocationImage {
+  width: 100%;
+}
+.LocationImageContainer:hover {
+  background-color: #dedfe0;
+}
+.NavbarLink {
+  text-decoration: none;
+  color: #424242;
+  padding: 12px;
+  font-size: 4vh;
+}
+.NavbarLink:hover {
+  text-decoration: underline;
+  text-decoration-color: #e14e4e;
+}
+.ProductsList {
+  width: 75vw;
+  margin: auto;
+  padding-bottom: 20vh;
+  line-height: 2em;
+  font-size: 1.3em;
+}
+.ProductCategory {
+  font-weight: bold;
+  line-height: ;
+}
+.ProductItemLink {
+  width: 80%;
+  margin-left: 1vw;
+  display: inline;
+}
+.ProductDetailHistory {
+  padding-left: 2vw;
+}
+.ProductDetailHeading {
+  margin-top: 10vh;
+  width: 93vw;
+  margin: auto;
+}
+.ServicesImageContainer {
+  width: 75vw;
+  margin: auto;
+  display: flex;
+  flex-flow: row-wrap;
+}
+.ServicesImage: {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  max-width: 80%;
+}
+#ServicesImageThumbnail: {
+  display: block;
+  max-width: 500px;
+  height: auto;
+}
+.ItemContainer {
+  overflow: hidden;
+}
+.ItemImageContainer {
+  display: flex;
+  width: 75vw;
+  margin: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.ItemImage {
+  width: 15vw;
+  height: 15vw;
+  max-width: 15vw;
+  max-height: 15vw;
+  overflow: hidden;
+  padding: 1vw 1vw 1vw 1vw;
+}
+/*.ItemImage:hover {
+  background-color: #dedfe0;
+}*/
+.ItemImageLink {
+  margin: 0;
+  padding: 0;
+}
+.ItemDetails {
+  margin: 0 auto 0 auto;
+  width: 75vw;
+  padding-top: 10vh;
+  padding-left: 10vw;
+  padding: 10vh 0 10vw 20vh;
+  line-height: 2.5em;
+  font-size: 1.3em;
+  list-style: none;
+}
+.ProductThumnail {
+  width: 5vw;
+  height: 5vw;
+}
+.ProductItemContainer {
+  display: flex;
+  align-items: center;
+  padding: 1vw 0vw 1vw 1vw;
+}
+.Selected {
+  text-decoration: underline;
+}
+.SelectedImage {
+  width: 75vw;
+  height: 75vw;
+  display: block;
+  margin: 0 auto;
+}
+.SelectedImageName {
+  text-align: center;
+}
+.SelectedImageContainer {
+  display: flex;
+  margin: auto;
+}
