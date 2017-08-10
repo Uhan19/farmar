@@ -99,7 +99,7 @@ nav {
 }
 .ProductItemLink {
   width: 80%;
-  margin: auto;
+  margin-left: 1vw;
   display: inline;
 }
 .ProductDetailHistory {
@@ -136,7 +136,6 @@ nav {
   margin: auto;
   justify-content: center;
   flex-wrap: wrap;
-  border: 1px solid red;
 }
 .ItemImage {
   width: 15vw;
@@ -170,7 +169,7 @@ nav {
 .ProductItemContainer {
   display: flex;
   align-items: center;
-  padding: 3vw 3vw 3vw 3vw;
+  padding: 1vw 0vw 1vw 1vw;
 }
 .Selected {
   text-decoration: underline;
