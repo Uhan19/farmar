@@ -2,7 +2,6 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const productData = require('./productData.js');
-const itemHandler = require('./itemHandler.js');
 const env = require('./env.js');
 const email = require('emailjs');
 const server = email.server.connect({
@@ -14,9 +13,7 @@ const server = email.server.connect({
 const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
-
-app.use(express.static(path.join(__dirname, '../assets')));
-app.use(express.static(path.join(__dirname, '../public/Home.css')));
+app.use(express.static(path.join(__dirname, '../public')));
 
 app.set('view engine', 'pug');
 app.set('views', './public'); //this is reading from public
