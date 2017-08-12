@@ -46,8 +46,7 @@ app.get('/ProductDetail', (req, res) => {
   res.render('ProductDetailPage', {
     local: {
       item: productData[req.query.item],
-      name: req.query.item,
-      itemHandler: itemHandler
+      name: req.query.item
     }
   });
 });
@@ -57,17 +56,19 @@ app.get('/Invoice', (req, res) => {
 });
 
 app.post('/Invoice', (req, res) => {
-  console.log('req', req.body);
+  const emailBody = `From: ${req.body.Name} \n\nReturn Email: ${req.body.FromEmail}\n\nPhone Number: ${req.body
+    .Phone} \n\n\n Message: ${req.body.EmailBody}`;
+
   const email = {
-    from: req.body.FromEmail,
-    body: req.body.EmailBody,
+    from: req.body.Name,
+    body: emailBody,
     cc: req.body.CCOption ? req.body.FromEmail : '',
     phone: req.body.Phone
   };
   res.sendFile(path.join(__dirname + '/../public/Invoice.html'));
   server.send(
     {
-      text: 'from \n' + email.from + '\n' + email.phone + '\n\n\n' + email.body,
+      text: email.body,
       from: `GTRagsupplies <${env.GMAIL_USERNAME}>`,
       to: `GTRagsupplies <${env.GMAIL_RECEIVER}>`,
       cc: `${email.cc}`,
