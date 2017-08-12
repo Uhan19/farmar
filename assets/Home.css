@@ -29,17 +29,32 @@ nav {
 }
 .AboutImage {
   display: inline-block;
-  width: 29vw;
+  width: 35vw;
   float: left;
   margin-right: 5vw;
   margin-top: .5em;
   margin: .5em 5vw 20vh 0;
   border-radius: 1em;
 }
+@media (max-width: 700px) {
+  .AboutImage {
+    float: none;
+    width: 50vw;
+    display: block;
+    margin: auto;
+  }
+}
 .AboutHeading {
   font-weight: bold;
   font-size: 1.1em;
   text-align: center;
+}
+.BackButton {
+  border: none;
+  background-color: inherit;
+  color: inherit;
+  font-size: inherit;
+  position: absolute;
 }
 .BackgroundImageContainer {
   width: 100vw;
@@ -56,7 +71,7 @@ nav {
   margin: auto;
   text-align: center;
   padding: 0 0 5vh 0;
-  font-size: 5vh;
+  font-size: 5vw;
   font-weight: bold;
 }
 .BodyText {
@@ -70,14 +85,14 @@ nav {
 .BodyTextAbout {
   width: 75vw;
   margin-left: 10vw;
-  padding-bottom: 20vh;
+  padding-bottom: 10vh;
   line-height: 2em;
   font-size: 1.3em;
   align-items: center;
 }
 .EmailBody {
-  display: inline-block;
-  width: 54%;
+  display: block;
+  width: 80%;
   min-width: 500px;
   margin: auto;
 }
@@ -109,6 +124,10 @@ nav {
 .HomeLink:hover {
   text-decoration: underline;
   text-decoration-color: #e14e4e;
+}
+.HorizontalContainer {
+  display: flex;
+  align-items: center;
 }
 .LocationContainer {
   margin: auto;
@@ -148,7 +167,6 @@ nav {
 }
 .ProductCategory {
   font-weight: bold;
-  line-height: ;
 }
 .ProductItemLink {
   width: 80%;
@@ -160,8 +178,7 @@ nav {
 }
 .ProductDetailHeading {
   margin-top: 10vh;
-  width: 93vw;
-  margin: auto;
+  margin-left: 12vw;
 }
 .ServicesImageThumnbnail {
   margin: auto;
@@ -175,7 +192,8 @@ nav {
   display: flex;
   width: 75vw;
   margin: auto;
-  justify-content: center;
+  margin-top: 5vh;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 .ItemImage {
@@ -185,6 +203,10 @@ nav {
   max-height: 15vw;
   overflow: hidden;
   padding: 1vw 1vw 1vw 1vw;
+}
+.ItemImage:hover {
+  border-bottom: 2px solid #e14e4e;
+  margin-bottom: -2px;
 }
 /*.ItemImage:hover {
   background-color: #dedfe0;
@@ -204,12 +226,11 @@ nav {
   list-style: none;
 }
 .ProductThumnail {
-  width: 5vw;
-  height: 5vw;
+  width: 20vw;
+  height: 20vw;
 }
 .ProductItemContainer {
   display: flex;
-  align-items: center;
   padding: 1vw 0vw 1vw 1vw;
 }
 .Selected {
@@ -217,7 +238,6 @@ nav {
 }
 .SelectedImage {
   width: 75vw;
-  height: 75vw;
   display: block;
   margin: 0 auto;
 }

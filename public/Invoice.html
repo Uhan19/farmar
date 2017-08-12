@@ -15,7 +15,7 @@
   </nav>
 
   <div class="BackgroundImageContainer">
-    <img class="BackgroundImage" src="./backgroundImage.png" alt="Famar's Market">
+    <img class="BackgroundImage" src="https://dl.dropboxusercontent.com/s/z89ru42kzouakmz/BackgroundImage.png" alt="Famar's Market">
   </div>
 
   <div class="BodyTitle">
@@ -23,20 +23,30 @@
   </div>
 
   <div class="BodyTextAbout">
-    <img class="AboutImage" src="./Sagi.jpg">
+    <!-- <img class="AboutImage" src="https://dl.dropboxusercontent.com/s/sanzohkvk78q0i9/Plastic%20%284%29.JPG> -->
 
     <div class="EmailBody">
 
-    <form class="EmailForm" action="http://localhost:3000/Invoice" method="post" enctype="application/x-www-form-urlencoded">  
+    <form class="EmailForm" action="http://www.gtragsupplies.com/Invoice" method="post" enctype="application/x-www-form-urlencoded">  
+
+      <div class="EmailField">
+        <input class="EmailInput" name="Name" value=" Name">
+      </div>
 
       <div class="EmailField">
         <input class="EmailInput" name="FromEmail" value=" Your Email">
       </div>
 
       <div class="EmailField">
+        <input class="EmailInput" name="Phone" value=" Phone Number">
+      </div>
+
+      <div class="EmailField">
         <input class="EmailCheckBox" type="checkbox" name="CCOption" value="true">
         <label for="CCOption">Send a copy to my Email</label>
       </div>
+
+
 
       <div class="EmailField">
         <textarea class="EmailBodyInput" name="EmailBody" placeholder=" Invoice, Questions, Comments..."></textarea>

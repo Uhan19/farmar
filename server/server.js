@@ -64,16 +64,17 @@ app.post('/Invoice', (req, res) => {
   const email = {
     from: req.body.FromEmail,
     body: req.body.EmailBody,
-    cc: req.body.CCOption ? req.body.FromEmail : ''
+    cc: req.body.CCOption ? req.body.FromEmail : '',
+    phone: req.body.Phone
   };
   res.sendFile(path.join(__dirname + '/../public/Invoice.html'));
   server.send(
     {
-      text: 'from \n' + email.from + '\n\n\n' + email.body,
+      text: 'from \n' + email.from + '\n' + email.phone + '\n\n\n' + email.body,
       from: `GTRagsupplies <${env.GMAIL_USERNAME}>`,
       to: `GTRagsupplies <${env.GMAIL_RECEIVER}>`,
-      cc: 'else <hschan11@aim.com',
-      subject: `Invoice request from ${email.body}`
+      cc: `${email.cc}`,
+      subject: `Invoice request from ${email.FromEmail}`
     },
     (err, message) => {
       if (err) {

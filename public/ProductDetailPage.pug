@@ -13,15 +13,18 @@ html
       a(class='NavbarLink' href='/Invoice') Invoice
 
     div(class="BackgroundImageContainer")
-      img(class='BackgroundImage' src='./backgroundImage.png' alt='Grand Topham Ranch')/
+      img(class='BackgroundImage' src='https://dl.dropboxusercontent.com/s/z89ru42kzouakmz/BackgroundImage.png' alt='Grand Topham Ranch')/
+    
     div(class='ProductDetailHeading')
       a(href='/Products')
-        button(class='BackButton') Back to Products List
+        img(class="BackButtonIcon" src="https://dl.dropboxusercontent.com/s/a1wkkhhb9dhdjer/icons8-Back%20Arrow-18.png" alt="Back to Products")
+        button(class='BackButton HomeLink') Back to Products List
 
     div(class='BodyTitle')= local.name
+
     div(class='SelectedItemImageContainer')
-      a(class='ItemImageLink' href='')
-        img(class='SelectedImage' src='' alt=local.name)
+        a(class='ItemImageLink' href='')
+          img(class='SelectedImage' src='' alt=local.name)
 
     div(class='ItemImageContainer')
       each url in local.item.images
