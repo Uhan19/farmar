@@ -2,11 +2,10 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const productData = require('./productData.js');
-const env = require('./env.js');
 const email = require('emailjs');
 const server = email.server.connect({
-  user: `${env.GMAIL_USERNAME}`,
-  password: `${env.GMAIL_PASSWORD}`,
+  user: `${process.env.GMAIL_USERNAME}`,
+  password: `${process.env.GMAIL_PASSWORD}`,
   host: 'smtp.gmail.com',
   ssl: true
 });
@@ -69,8 +68,8 @@ app.post('/Invoice', (req, res) => {
   server.send(
     {
       text: email.body,
-      from: `GTRagsupplies <${env.GMAIL_USERNAME}>`,
-      to: `GTRagsupplies <${env.GMAIL_RECEIVER}>`,
+      from: `GTRagsupplies <${process.env.GMAIL_USERNAME}>`,
+      to: `GTRagsupplies <${process.env.GMAIL_RECEIVER}>`,
       cc: `${email.cc}`,
       subject: `Invoice request from ${email.FromEmail}`
     },
@@ -87,6 +86,6 @@ app.get('/InvoiceSent', (req, res) => {
   res.sendFile(path.join(__dirname + '/../public/InvoiceSent.html'));
 });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
   console.log('Famars are on the market');
 });
