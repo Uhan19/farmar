@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "Grand Topham Ranch Agricultural Supplies",
   "engines": {
-    "node": "6.11.0",
-    "npm": "3.10.10"
+    "node": "6.11.0"
   },
   "main": "server/server.js",
   "author": "Chan Kwon",
