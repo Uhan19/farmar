@@ -1,23 +1,30 @@
 {
   "name": "farmar",
   "version": "1.0.0",
-  "description": "",
-  "main": "./server/index.js",
+  "description": "Grand Topham Ranch Agricultural Supplies",
   "engines": {
-    "node": "6.11.1"
+    "node": "6.11.0",
+    "npm": "3.10.10"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server/server.js"
-  },
+  "main": "server/server.js",
   "author": "Chan Kwon",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^1.11.0"
   },
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kwon11/farmar"
+  },
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
     "pug": "^2.0.0-rc.2"
-  }
+  },
+  "keywords": ["node", "heroku", "GrandTophamRanch"],
+  "license": "MIT"
 }
