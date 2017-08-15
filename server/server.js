@@ -2,11 +2,10 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const productData = require('./productData.js');
-const env = require('./env.js');
 const email = require('emailjs');
 const server = email.server.connect({
-  user: `${env.GMAIL_USERNAME}`,
-  password: `${env.GMAIL_PASSWORD}`,
+  user: `${GMAIL_USERNAME}`,
+  password: `${GMAIL_PASSWORD}`,
   host: 'smtp.gmail.com',
   ssl: true
 });
@@ -69,8 +68,8 @@ app.post('/Invoice', (req, res) => {
   server.send(
     {
       text: email.body,
-      from: `GTRagsupplies <${env.GMAIL_USERNAME}>`,
-      to: `GTRagsupplies <${env.GMAIL_RECEIVER}>`,
+      from: `GTRagsupplies <${GMAIL_USERNAME}>`,
+      to: `GTRagsupplies <${GMAIL_RECEIVER}>`,
       cc: `${email.cc}`,
       subject: `Invoice request from ${email.FromEmail}`
     },
