@@ -71,7 +71,7 @@ app.post('/Invoice', (req, res) => {
       from: `GTRagsupplies <${process.env.GMAIL_USERNAME}>`,
       to: `GTRagsupplies <${process.env.GMAIL_RECEIVER}>`,
       cc: `${email.cc}`,
-      subject: `Invoice request from ${email.FromEmail}`
+      subject: `Invoice request from ${email.from}`
     },
     (err, message) => {
       if (err) {
