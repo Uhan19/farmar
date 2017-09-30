@@ -50,11 +50,11 @@ app.get('/ProductDetail', (req, res) => {
   });
 });
 
-app.get('/Invoice', (req, res) => {
-  res.sendFile(path.join(__dirname + '/../public/Invoice.html'));
+app.get('/Quote', (req, res) => {
+  res.sendFile(path.join(__dirname + '/../public/Quote.html'));
 });
 
-app.post('/Invoice', (req, res) => {
+app.post('/Quote', (req, res) => {
   const emailBody = `From: ${req.body.Name} \n\nReturn Email: ${req.body.FromEmail}\n\nPhone Number: ${req.body
     .Phone} \n\n\n Message: ${req.body.EmailBody}`;
 
@@ -64,14 +64,14 @@ app.post('/Invoice', (req, res) => {
     cc: req.body.CCOption ? req.body.FromEmail : '',
     phone: req.body.Phone
   };
-  res.sendFile(path.join(__dirname + '/../public/Invoice.html'));
+  res.sendFile(path.join(__dirname + '/../public/Quote.html'));
   server.send(
     {
       text: email.body,
       from: `GTRagsupplies <${process.env.GMAIL_USERNAME}>`,
-      to: `GTRagsupplies <${process.env.GMAIL_RECEIVER}>`,
+      to: `GTRagsupplies <${process.env.GMAIL_RECEIVER}>, GTRagsupplies <${process.env.GMAIL_RECEIVER2}>`,
       cc: `${email.cc}`,
-      subject: `Invoice request from ${email.from}`
+      subject: `Quote request from ${email.from}`
     },
     (err, message) => {
       if (err) {
@@ -79,13 +79,14 @@ app.post('/Invoice', (req, res) => {
       }
     }
   );
-  res.redirect('/InvoiceSent');
+  res.redirect('/QuoteSent');
 });
 
-app.get('/InvoiceSent', (req, res) => {
-  res.sendFile(path.join(__dirname + '/../public/InvoiceSent.html'));
+app.get('/QuoteSent', (req, res) => {
+  res.sendFile(path.join(__dirname + '/../public/QuoteSent.html'));
 });
 
+// app.listen(process.env.port, () => {
 app.listen(3000, () => {
   console.log('Famars are on the market');
 });

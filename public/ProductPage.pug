@@ -15,11 +15,13 @@ html
       div(class="NavbarLinkContainer")
         a(class='NavbarLink' href='/Services') Services
       div(class="NavbarLinkContainer")
-        a(class='NavbarLink' href='/Invoice') Invoice
+        a(class='NavbarLink' href='/Quote') Quote
 
     div(class="BackgroundImageContainer")
-      img(class='BackgroundImage' src='https://dl.dropboxusercontent.com/s/z89ru42kzouakmz/BackgroundImage.png' alt='Grand Topham Ranch')/
+      img(class='BackgroundImage' src='https://dl.dropboxusercontent.com/s/iyvlrs9ocmk74g6/ProductBackgroundPage.png' alt='Grand Topham Ranch')/
 
+    div(class="BodyTitle") METAL: 90 DAY REQUEST AHEAD OF TIME
+    div(class="BodyTitle") PLASTIC: 70 DAY REQUEST AHEAD OF TIME
 
     div(class='ProductsList')
       each item, itemName in local
@@ -27,7 +29,7 @@ html
         div(class='ProductItemContainer')
           a(class='ItemLink' href=url)
             img(class='ProductThumnail' src=item.images[0] alt=itemName)
-          a(class='ItemLinkTitle ItemLink' href=url)= itemName
+          a(class='ItemLinkTitle' href=url)= itemName
 
 
 

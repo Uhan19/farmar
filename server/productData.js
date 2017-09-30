@@ -77,7 +77,10 @@ module.exports = {
     ]
   },
   Birdnet: {
-    images: ['https://dl.dropboxusercontent.com/s/y7h0q604817bjqu/Birdnet.jpg']
+    images: [
+      'https://dl.dropboxusercontent.com/s/y7h0q604817bjqu/Birdnet.jpg',
+      'https://dl.dropboxusercontent.com/s/qoo66q3jssm1ei2/Birdnet%282%29.jpg'
+    ]
   },
   'Frozen Cloth': {
     images: ['https://dl.dropboxusercontent.com/s/sm3joslmtbxzk7h/Frozen%20Cloth.jpg']
@@ -89,6 +92,13 @@ module.exports = {
     images: ['https://dl.dropboxusercontent.com/s/18a98ck657nwyhw/Shade%20Cloth.jpg']
   },
   'Wires 12ga, 14ga, 16ga': {
-    images: ['https://dl.dropboxusercontent.com/s/v4g0tzl0q98j1b0/Wires%2012ga%2C%2014ga%2C%2016ga.JPG']
+    images: [
+      'https://dl.dropboxusercontent.com/s/v4g0tzl0q98j1b0/Wires%2012ga%2C%2014ga%2C%2016ga.JPG',
+      'https://dl.dropboxusercontent.com/s/7f6ybvf4atdirv1/Wires%20%282%29.jpg',
+      'https://dl.dropboxusercontent.com/s/vgf35nnojt9sy51/Wires%283%29.jpg',
+      'https://dl.dropboxusercontent.com/s/gvkswiamk7231et/Wires%284%29.jpg',
+      'https://dl.dropboxusercontent.com/s/unct1izzzp85g4k/Wires%285%29.jpg',
+      'https:/dl.dropboxusercontent.com/s/egpdjhtjmtihpol/Wires%286%29.jpg'
+    ]
   }
 };

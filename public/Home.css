@@ -71,7 +71,7 @@ nav {
   margin: auto;
   text-align: center;
   padding: 0 0 5vh 0;
-  font-size: 3vw;
+  font-size: 2vw;
   font-weight: bold;
 }
 .BodyText {
@@ -113,21 +113,23 @@ nav {
 }
 .EmailBody {
   display: block;
-  width: 80%;
-  min-width: 500px;
-  margin: auto;
+  width: 80vw;
+  min-width: auto;
 }
 .EmailForm {
-  width: 100%;
+  width: 80vw;
   padding: 0px;
+  box-sizing: border-box;
 }
 .EmailField {
-  width: 100%;
+  width: 80vw;
   padding: 0px;
   padding-top: 3vh;
+  box-sizing: border-box;
 }
 .EmailInput {
-  width: 50%;
+  width: 30vw;
+  min-width: 200px;
   height: 5vh;
   padding: 0px;
   font-size: inherit;
@@ -136,7 +138,7 @@ nav {
   margin: 0;
 }
 .EmailInputButton {
-  width: 33%;
+  width: 33vw;
   height: 7vh;
   color: #fff;
   background-color: #007bff;
@@ -165,7 +167,7 @@ nav {
   text-decoration: none;
 }
 .EmailBodyInput {
-  width: 100%;
+  width: 80vw;
   height: 55vh;
   text-align: left;
   margin: 0;
@@ -184,6 +186,7 @@ nav {
   justify-content: space-between;
   width: 100vw;
   padding: 0 12vw 0 12vw;
+  margin-bottom: 10vh;
 }
 @media (max-width: 700px) {
   .HomePageBody {
@@ -300,11 +303,16 @@ nav {
 
 .ItemLink {
   display: block;
-  font-size: 1vw;
+  font-size: 1.2vw;
+}
+.ProductItemContainer:hover {
+  text-decoration: underline;
+  color: #e14e4e;
 }
 
 .ItemLinkTitle {
-  line-height: 0%;
+  /*  line-height: 0%;*/
+  font-size: 1.2vw;
 }
 .ProductThumnail {
   width: 20vw;
