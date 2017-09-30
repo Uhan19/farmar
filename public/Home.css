@@ -34,6 +34,7 @@ nav {
   margin-top: 0.5em;
   /*margin: 0.5em 5vw 50vh 0;*/
   border-radius: 1em;
+  margin-bottom: 2vh;
 }
 @media (max-width: 700px) {
   .AboutImage {
@@ -261,7 +262,12 @@ nav {
 }
 .ProductDetailHeading {
   margin-top: 10vh;
-  margin-left: 12vw;
+  margin-left: 24vw;
+}
+@media (max-width: 700px) {
+  .ProductDetailHeading {
+    font-size: 1.2vh;
+  }
 }
 .ServicesImageThumnbnail {
   margin: auto;
