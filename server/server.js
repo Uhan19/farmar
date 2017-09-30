@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded());
 app.use(express.static(path.join(__dirname, '../public')));
 
 app.set('view engine', 'pug');
-app.set('views', './public'); //this is reading from public.
+app.set('views', './public'); //this is reading from public
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname + '/../public/Home.html'));
