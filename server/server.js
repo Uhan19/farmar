@@ -86,7 +86,7 @@ app.get('/QuoteSent', (req, res) => {
   res.sendFile(path.join(__dirname + '/../public/QuoteSent.html'));
 });
 
-app.listen(process.env.port, () => {
+app.listen(process.env.PORT, () => {
   // app.listen(3000, () => {
   console.log('Famars are on the market');
 });
