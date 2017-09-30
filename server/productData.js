@@ -27,7 +27,7 @@ module.exports = {
       'https://dl.dropboxusercontent.com/s/0f5kzk4nmxz2vxa/Ground%20Cover%20%284%29.JPG'
     ]
   },
-  'Mini Tunnel Strawberries': {
+  'Mini Tunnel': {
     images: [
       'https://dl.dropboxusercontent.com/s/wjm9fa64l29zzb3/Mini%20Tunnel.JPG',
       'https://dl.dropboxusercontent.com/s/untkqzlvr2hyugr/Mini%20Tunnel%20%282%29.JPG',
@@ -57,7 +57,6 @@ module.exports = {
   },
   Twine: {
     images: [
-      'https://dl.dropboxusercontent.com/s/2ukfl04xcfrp2wo/Twine.JPG',
       'https://dl.dropboxusercontent.com/s/2ukfl04xcfrp2wo/Twine.JPG',
       'https://dl.dropboxusercontent.com/s/6l9c1fsxjlfchat/Twine%20%283%29.JPG'
     ]

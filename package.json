@@ -17,12 +17,16 @@
     "pug": "2.0.0-rc.2"
   },
   "devDependencies": {
-    "nodemon": "1.11.0"
+    "nodemon": "^1.11.0"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/kwon11/farmar"
   },
-  "keywords": ["node", "heroku", "GrandTophamRanch"],
+  "keywords": [
+    "node",
+    "heroku",
+    "GrandTophamRanch"
+  ],
   "license": "MIT"
 }

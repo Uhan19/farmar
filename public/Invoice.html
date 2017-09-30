@@ -3,15 +3,29 @@
 <head>
   <title>Grand Topham Ranch</title>
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.41, maximum-scale=1" />
+
 </head>
 
 <body>
   <nav>
-    <a class="NavbarLink" href="/Home">Home</a>
-    <a class="NavbarLink" href="Location">Location</a>
-    <a class="NavbarLink" href="/Products">Products</a>
-    <a class="NavbarLink" href="/Services">Services</a>
-    <a class="NavbarLink Selected" href="/Invoice">Invoice</a>
+    <div class="NavbarLinkContainer">
+      <a class="NavbarLink" href="/Home">Home</a>
+    </div>
+    <div class="NavbarLinkContainer">
+      <a class="NavbarLink" href="Location">Location</a>
+
+    </div>
+    <div class="NavbarLinkContainer">
+      <a class="NavbarLink" href="/Products">Products</a>
+
+    </div>
+    <div class="NavbarLinkContainer">
+      <a class="NavbarLink" href="/Services">Services</a>
+
+    </div>
+    <div class="NavbarLinkContainer">
+      <a class="NavbarLink Selected" href="/Invoice">Invoice</a>
+    </div>
   </nav>
 
   <div class="BackgroundImageContainer">
@@ -27,18 +41,18 @@
 
     <div class="EmailBody">
 
-    <form class="EmailForm" action="http://infinite-tor-80649.herokuapp.com/Invoice" method="post" enctype="application/x-www-form-urlencoded">  
+    <form class="EmailForm" action="http://infinite-tor-80649.herokuapp.com/Invoice" method="post" enctype="application/x-www-form-urlencoded">
 
       <div class="EmailField">
-        <input class="EmailInput" name="Name" value=" Name">
+        <input class="EmailInput" name="Name" placeholder="Name">
       </div>
 
       <div class="EmailField">
-        <input class="EmailInput" name="FromEmail" value=" Your Email">
+        <input class="EmailInput" name="FromEmail" placeholder="Your Email">
       </div>
 
       <div class="EmailField">
-        <input class="EmailInput" name="Phone" value=" Phone Number">
+        <input class="EmailInput" name="Phone" placeholder="Phone Number">
       </div>
 
       <div class="EmailField">
@@ -51,12 +65,13 @@
       <div class="EmailField">
         <textarea class="EmailBodyInput" name="EmailBody" placeholder=" Invoice, Questions, Comments..."></textarea>
       </div>
+      <div id="EmailInputButtonContainer">
+        <button class="EmailInputButton">Send</button>
+      </div>
 
-      <button class="EmailInput HomeLink" style="border: 0; margin: auto;">Send</button>
-    
     </form>
     </div>
-    
+
   </div>
 
 </body>

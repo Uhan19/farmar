@@ -6,11 +6,16 @@ html
 
   body
     nav
-      a(class='NavbarLink' href='/Home') Home
-      a(class='NavbarLink' href='/Location') Location
-      a(class='NavbarLink Selected' href='/Products') Products
-      a(class='NavbarLink' href='/Services') Services
-      a(class='NavbarLink' href='/Invoice') Invoice
+      div(class="NavbarLinkContainer")
+        a(class='NavbarLink' href='/Home') Home
+      div(class="NavbarLinkContainer")
+        a(class='NavbarLink' href='/Location') Location
+      div(class="NavbarLinkContainer")
+        a(class='NavbarLink Selected' href='/Products') Products
+      div(class="NavbarLinkContainer")
+        a(class='NavbarLink' href='/Services') Services
+      div(class="NavbarLinkContainer")
+        a(class='NavbarLink' href='/Invoice') Invoice
 
     div(class="BackgroundImageContainer")
       img(class='BackgroundImage' src='https://dl.dropboxusercontent.com/s/z89ru42kzouakmz/BackgroundImage.png' alt='Grand Topham Ranch')/
@@ -18,14 +23,12 @@ html
     div(class='BodyTitle') Products Page
 
     div(class='ProductsList')
-      ul(class='ProductCategory') Products
       each item, itemName in local
         -var url = "/ProductDetail?item=" + itemName
         div(class='ProductItemContainer')
-          a(class='ItemLink' href=url)  
+          a(class='ItemLink' href=url)= itemName
+          a(class='ItemLink' href=url)
             img(class='ProductThumnail' src=item.images[0] alt=itemName)
-          li(class='ProductItemLink HomeLink')
-            a(class='ItemLink' href=url)= itemName
 
 
 

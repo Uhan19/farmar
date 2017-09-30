@@ -6,15 +6,20 @@ html
 
   body
     nav
-      a(class='NavbarLink' href='/Home') Home
-      a(class='NavbarLink' href='/Location') Location
-      a(class='NavbarLink Selected' href='/Products') Products
-      a(class='NavbarLink' href='/Services') Services
-      a(class='NavbarLink' href='/Invoice') Invoice
+      div(class="NavbarLinkContainer")
+        a(class='NavbarLink' href='/Home') Home
+      div(class="NavbarLinkContainer")
+        a(class='NavbarLink' href='/Location') Location
+      div(class="NavbarLinkContainer")
+        a(class='NavbarLink Selected' href='/Products') Products
+      div(class="NavbarLinkContainer")
+        a(class='NavbarLink' href='/Services') Services
+      div(class="NavbarLinkContainer")
+        a(class='NavbarLink' href='/Invoice') Invoice
 
     div(class="BackgroundImageContainer")
       img(class='BackgroundImage' src='https://dl.dropboxusercontent.com/s/z89ru42kzouakmz/BackgroundImage.png' alt='Grand Topham Ranch')/
-    
+
     div(class='ProductDetailHeading')
       a(href='/Products')
         img(class="BackButtonIcon" src="https://dl.dropboxusercontent.com/s/a1wkkhhb9dhdjer/icons8-Back%20Arrow-18.png" alt="Back to Products")
