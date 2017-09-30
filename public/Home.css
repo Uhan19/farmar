@@ -14,13 +14,6 @@ body {
 nav {
   display: flex;
   justify-content: space-around;
-  height: 4vw;
-}
-@media (max-device-width: 800px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
 }
 @media (max-width: 700px) {
   nav {
@@ -31,10 +24,10 @@ nav {
 .AboutImage {
   display: inline-block;
   width: 35vw;
-  float: left;
+  /*float: left;*/
   margin-right: 5vw;
   margin-top: 0.5em;
-  margin: 0.5em 5vw 20vh 0;
+  /*margin: 0.5em 5vw 50vh 0;*/
   border-radius: 1em;
 }
 @media (max-width: 700px) {
@@ -43,6 +36,7 @@ nav {
     width: 50vw;
     display: block;
     margin: auto;
+    margin-bottom: 0;
   }
 }
 .AboutHeading {
@@ -160,7 +154,26 @@ nav {
   -moz-box-sizing: border-box;
   resize: none;
 }
-
+.GoogleMap {
+  width: 75vw;
+  height: 50vh;
+}
+.HomePageBody {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  padding: 0 12vw 0 12vw;
+}
+@media (max-width: 700px) {
+  .HomePageBody {
+    flex-direction: column;
+  }
+}
+.HomePageAbout {
+  flex: 1;
+}
 .HomeLink:hover {
   text-decoration: underline;
   text-decoration-color: #e14e4e;
@@ -199,6 +212,10 @@ nav {
   /*text-decoration: underline;
   text-decoration-color: #e14e4e;*/
   border-bottom: 2px solid #e14e4e;
+}
+
+.NavbarLinkContainer {
+  margin-bottom: 2vh;
 }
 .ProductsList {
   width: 75vw;
