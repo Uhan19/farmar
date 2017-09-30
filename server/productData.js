@@ -51,7 +51,6 @@ module.exports = {
     images: [
       'https://dl.dropboxusercontent.com/s/62ybxkcsiwaby41/Trellis.jpg',
       'https://dl.dropboxusercontent.com/s/t3x0rxv58m5ca56/Trellis%20%282%29.JPG',
-      'https://dl.dropboxusercontent.com/s/t3x0rxv58m5ca56/Trellis%20%282%29.JPG',
       'https://dl.dropboxusercontent.com/s/27bn7f7q7fojknr/Trellis%20%284%29.JPG'
     ]
   },
