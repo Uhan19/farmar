@@ -20,15 +20,14 @@ html
     div(class="BackgroundImageContainer")
       img(class='BackgroundImage' src='https://dl.dropboxusercontent.com/s/z89ru42kzouakmz/BackgroundImage.png' alt='Grand Topham Ranch')/
 
-    div(class='BodyTitle') Products Page
 
     div(class='ProductsList')
       each item, itemName in local
         -var url = "/ProductDetail?item=" + itemName
         div(class='ProductItemContainer')
-          a(class='ItemLink' href=url)= itemName
           a(class='ItemLink' href=url)
             img(class='ProductThumnail' src=item.images[0] alt=itemName)
+          a(class='ItemLinkTitle ItemLink' href=url)= itemName
 
 
 
