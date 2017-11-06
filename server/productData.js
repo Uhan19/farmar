@@ -1,103 +1,93 @@
 module.exports = {
   'Galvenize Posts for Greenhouses': {
     images: [
-      'https://dl.dropboxusercontent.com/s/4yx33m7bs1wl170/Hoop%20before%20Plastic.jpg',
-      'https://dl.dropboxusercontent.com/s/j2tirz5oxjq9kne/Hoops%20before%20Plastic%20%282%29.JPG',
-      'https://dl.dropboxusercontent.com/s/he8hxjpjyjhgv27/Hoops.JPG',
-      'https://dl.dropboxusercontent.com/s/qgaqk46lbjs7ueu/Hoops%20%282%29.jpg',
-      'https://dl.dropboxusercontent.com/s/9xdgk3i9muya4hh/Hoops%20%283%29.jpg',
-      'https://dl.dropboxusercontent.com/s/thwajlfqjpaotay/Hoops%20%285%29.jpg',
-      'https://dl.dropboxusercontent.com/s/gaafld83zgvasx2/Post.jpg',
-      'https://dl.dropboxusercontent.com/s/smdnxcx3qhj9ha3/Post%20%282%29.jpg'
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938470/Galvenize%20Posts%20for%20Greenhouses0.jpg',
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938470/Galvenize%20Posts%20for%20Greenhouses1.jpg',
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938470/Galvenize%20Posts%20for%20Greenhouses2.jpg',
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938471/Galvenize%20Posts%20for%20Greenhouses3.jpg',
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938471/Galvenize%20Posts%20for%20Greenhouses4.jpg',
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938475/Galvenize%20Posts%20for%20Greenhouses5.jpg',
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938470/Galvenize%20Posts%20for%20Greenhouses6.jpg',
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938470/Galvenize%20Posts%20for%20Greenhouses7.jpg'
     ]
   },
   'Greenhouse Plastic': {
     images: [
-      'https://dl.dropboxusercontent.com/s/0wc85foqgqx6dfp/Plastic.jpeg',
-      'https://dl.dropboxusercontent.com/s/895o066rj91a6ce/Plastic%20%282%29.jpg',
-      'https://dl.dropboxusercontent.com/s/vrbmuvpspslozdv/Plastic%20%283%29.jpg',
-      'https://dl.dropboxusercontent.com/s/sanzohkvk78q0i9/Plastic%20%284%29.JPG'
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938470/Greenhouse%20Plastic0.jpg',
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938470/Greenhouse%20Plastic1.jpg',
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938470/Greenhouse%20Plastic2.jpg',
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938470/Greenhouse%20Plastic3.jpg'
     ]
   },
   'Ground Cover': {
     images: [
-      'https://dl.dropboxusercontent.com/s/qymymgvsz15l2em/Ground%20Cover.jpg',
-      'https://dl.dropboxusercontent.com/s/v0xfgrmwyjk9ju8/Ground%20Cover%20%282%29.jpg',
-      'https://dl.dropboxusercontent.com/s/sqhvy9fz59vf19u/Ground%20Cover%20%283%29.jpg',
-      'https://dl.dropboxusercontent.com/s/0f5kzk4nmxz2vxa/Ground%20Cover%20%284%29.JPG'
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938470/Ground%20Cover0.jpg',
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938471/Ground%20Cover1.jpg',
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938470/Ground%20Cover2.jpg',
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938472/Ground%20Cover3.jpg'
     ]
   },
   'Mini Tunnel': {
     images: [
-      'https://dl.dropboxusercontent.com/s/wjm9fa64l29zzb3/Mini%20Tunnel.JPG',
-      'https://dl.dropboxusercontent.com/s/untkqzlvr2hyugr/Mini%20Tunnel%20%282%29.JPG',
-      'https://dl.dropboxusercontent.com/s/hpx1eebehiv3x3j/Mini%20Tunnel%20%283%29.JPG'
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938470/Mini%20Tunnel0.jpg',
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938470/Mini%20Tunnel1.jpg',
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938470/Mini%20Tunnel2.jpg'
     ]
   },
   Mulch: {
     images: [
-      'https://dl.dropboxusercontent.com/s/zvsta1poexg3y9j/Mulch.jpg',
-      'https://dl.dropboxusercontent.com/s/ycj5ggf5o1dk98d/Mulch%20%282%29.jpg',
-      'https://dl.dropboxusercontent.com/s/tlibx3o7qrpotpw/Mulch%20%283%29.jpg'
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938471/Mulch0.jpg',
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938470/Mulch1.jpg',
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938470/Mulch2.jpg'
     ]
   },
   Rope: {
     images: [
-      'https://dl.dropboxusercontent.com/s/ti9k9dgdz82ef0p/Rope.jpg',
-      'https://dl.dropboxusercontent.com/s/lguta9r4jnzjxrs/Rope%20%282%29.JPG'
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938470/Rope0.jpg',
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938470/Rope1.jpg',
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938470/Rope2.jpg',
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938470/Rope3.jpg',
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938471/Rope4.jpg'
     ]
   },
   Trellis: {
     images: [
-      'https://dl.dropboxusercontent.com/s/62ybxkcsiwaby41/Trellis.jpg',
-      'https://dl.dropboxusercontent.com/s/t3x0rxv58m5ca56/Trellis%20%282%29.JPG',
-      'https://dl.dropboxusercontent.com/s/27bn7f7q7fojknr/Trellis%20%284%29.JPG'
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938471/Trellis0.jpg',
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938470/Trellis1.jpg',
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938470/Trellis2.jpg'
     ]
   },
-  Twine: {
-    images: [
-      'https://dl.dropboxusercontent.com/s/2ukfl04xcfrp2wo/Twine.JPG',
-      'https://dl.dropboxusercontent.com/s/6l9c1fsxjlfchat/Twine%20%283%29.JPG'
-    ]
-  },
-  Valves: {
-    images: [
-      'https://dl.dropboxusercontent.com/s/8kpkvu21heaza0l/Automation.JPG',
-      'https://dl.dropboxusercontent.com/s/xc7qiaifo5500qf/Automation%20%282%29.JPG',
-      'https://dl.dropboxusercontent.com/s/mo4u6zdwx1ktswn/Valve.jpg',
-      'https://dl.dropboxusercontent.com/s/561wx959k33jgly/Valve%20%282%29.JPG'
-    ]
-  },
+  Twine: { images: ['http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938470/Twine0.jpg'] },
+  Valves: { images: ['http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938471/Valves0.jpg'] },
   Windbreak: {
     images: [
-      'https://dl.dropboxusercontent.com/s/pg8p04357vdlhh5/Windbreak.JPG',
-      'https://dl.dropboxusercontent.com/s/6f1obau49kwjplj/Windbreak%20Posts.jpg',
-      'https://dl.dropboxusercontent.com/s/7ltjb18b5pa29vo/Windbreak%20Posts%20%282%29.JPG'
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938471/Windbreak0.jpg',
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938470/Windbreak1.jpg',
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938470/Windbreak2.jpg'
     ]
   },
   Birdnet: {
     images: [
-      'https://dl.dropboxusercontent.com/s/y7h0q604817bjqu/Birdnet.jpg',
-      'https://dl.dropboxusercontent.com/s/qoo66q3jssm1ei2/Birdnet%282%29.jpg'
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938470/Birdnet0.jpg',
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938470/Birdnet1.jpg',
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938470/Birdnet2.jpg',
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938470/Birdnet3.jpg',
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938470/Birdnet4.jpg',
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938471/Birdnet5.jpg'
     ]
   },
-  'Frozen Cloth': {
-    images: ['https://dl.dropboxusercontent.com/s/sm3joslmtbxzk7h/Frozen%20Cloth.jpg']
-  },
-  'Insect Mesh': {
-    images: ['https://dl.dropboxusercontent.com/s/p4c6l0jwnk2w2z5/Insect%20Mesh.jpg']
-  },
   'Shade Cloth': {
-    images: ['https://dl.dropboxusercontent.com/s/18a98ck657nwyhw/Shade%20Cloth.jpg']
+    images: [
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938470/Shade%20Cloth0.jpg',
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938470/Shade%20Cloth1.jpg',
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938470/Shade%20Cloth2.jpg',
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938472/Shade%20Cloth3.jpg'
+    ]
   },
   'Wires 12ga, 14ga, 16ga': {
     images: [
-      'https://dl.dropboxusercontent.com/s/v4g0tzl0q98j1b0/Wires%2012ga%2C%2014ga%2C%2016ga.JPG',
-      'https://dl.dropboxusercontent.com/s/7f6ybvf4atdirv1/Wires%20%282%29.jpg',
-      'https://dl.dropboxusercontent.com/s/vgf35nnojt9sy51/Wires%283%29.jpg',
-      'https://dl.dropboxusercontent.com/s/gvkswiamk7231et/Wires%284%29.jpg',
-      'https://dl.dropboxusercontent.com/s/unct1izzzp85g4k/Wires%285%29.jpg',
-      'https:/dl.dropboxusercontent.com/s/egpdjhtjmtihpol/Wires%286%29.jpg'
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938470/Wires%2012ga%2C%2014ga%2C%2016ga0.jpg',
+      'http://res.cloudinary.com/grand-topham-ranch/image/upload/v1509938470/Wires%2012ga%2C%2014ga%2C%2016ga1.jpg'
     ]
   }
 };
