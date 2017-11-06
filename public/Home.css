@@ -56,6 +56,8 @@ nav {
   color: inherit;
   font-size: inherit;
   position: absolute;
+  text-decoration: underline;
+  text-decoration-color: #e14e4e;
 }
 .BackgroundImageContainer {
   width: 100vw;
@@ -263,6 +265,7 @@ nav {
 .ProductDetailHeading {
   margin-top: 10vh;
   margin-left: 24vw;
+  padding-bottom: 5vh;
 }
 @media (max-width: 700px) {
   .ProductDetailHeading {
