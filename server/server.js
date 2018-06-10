@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const productData = require('./productData.js');
+// const productData = require('./productDataAfterOct6Updates.js');
 const email = require('emailjs');
 const server = email.server.connect({
   user: `${process.env.GMAIL_USERNAME}`,
@@ -86,7 +87,7 @@ app.get('/QuoteSent', (req, res) => {
   res.sendFile(path.join(__dirname + '/../public/QuoteSent.html'));
 });
 
-app.listen(process.env.PORT, () => {
-  // app.listen(3000, () => {
+// app.listen(process.env.PORT, () => {
+app.listen(3000, () => {
   console.log('Famars are on the market');
 });
