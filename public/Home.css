@@ -226,6 +226,27 @@ nav {
 .LocationImageContainer:hover {
   background-color: #dedfe0;
 }
+
+.NavbarLogo {
+  width: 75px;
+  height: auto;
+}
+
+.NavbarLinkLeft {
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-start;
+  height: fit-content;
+}
+
+.NavbarLinkRight {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+}
+
 .NavbarLink {
   text-decoration: none;
   color: #424242;
@@ -241,6 +262,8 @@ nav {
 
 .NavbarLinkContainer {
   margin-bottom: 2vh;
+  margin-left: 20px;
+  margin-right: 10px;
 }
 .ProductsList {
   width: 75vw;
