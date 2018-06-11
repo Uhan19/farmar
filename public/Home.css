@@ -19,11 +19,13 @@ body {
 nav {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 @media (max-width: 700px) {
   nav {
-    flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 .AboutImage {
@@ -201,7 +203,7 @@ nav {
 }
 .HomeLink:hover {
   text-decoration: underline;
-  text-decoration-color: #e14e4e;
+  text-decoration-color: #32AFE4;
   cursor: pointer;
 }
 .HorizontalContainer {
@@ -229,43 +231,42 @@ nav {
 }
 
 .NavbarLogo {
-  width: 75px;
-  height: auto;
+  margin-left: 15px;
+  margin-right: auto;
+  width: auto;
+  height: 8vh;
 }
-
-.NavbarLinkLeft {
-  display: flex;
-  flex-grow: 1;
-  align-items: flex-start;
-  height: fit-content;
-}
-
-.NavbarLinkRight {
-  display: flex;
-  flex-grow: 1;
-  justify-content: flex-end;
-  flex-direction: row;
-  align-items: center;
+@media (max-width: 700px) {
+  .NavbarLogo {
+    margin-right: 15px;
+  }
 }
 
 .NavbarLink {
   text-decoration: none;
   color: #424242;
-  font-size: 4vh;
+  font-size: 3.5vh;
   padding-bottom: 0.1vw;
 }
 
 .NavbarLink:hover {
   /*text-decoration: underline;
-  text-decoration-color: #e14e4e;*/
-  border-bottom: 2px solid #e14e4e;
+  text-decoration-color: #32AFE4;*/
+  border-bottom: 2px solid #32AFE4;
 }
 
 .NavbarLinkContainer {
-  margin-bottom: 2vh;
-  margin-left: 20px;
-  margin-right: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
+
+@media (max-width: 700px) {
+  .NavbarLinkContainer {
+    margin-bottom: 2vh;
+    width: calc(50% - 30px);
+  }
+}
+
 .ProductsList {
   width: 75vw;
   margin: auto;
@@ -326,7 +327,7 @@ nav {
   margin: 1vw 0.5vw 1vw 1vw;
 }
 .ItemImage:hover {
-  border-bottom: 2px solid #e14e4e;
+  border-bottom: 2px solid #32AFE4;
   margin-bottom: -2px;
 }
 /*.ItemImage:hover {
@@ -343,7 +344,7 @@ nav {
 }
 .ProductItemContainer:hover {
   text-decoration: underline;
-  color: #e14e4e;
+  color: #32AFE4;
 }
 
 .ItemLinkTitle {
@@ -361,7 +362,7 @@ nav {
 }
 
 .Selected {
-  border-bottom: 2px solid #e14e4e;
+  border-bottom: 2px solid #32AFE4;
 }
 .SelectedImage {
   width: 75vw;
