@@ -73,7 +73,7 @@ app.post('/Quote', (req, res) => {
     {
       text: email.body,
       from: `GTRagsupplies <${process.env.GMAIL_USERNAME}>`,
-      to: `GTRagsupplies <${process.env.GMAIL_RECEIVER}>, GTRagsupplies <${process.env.GMAIL_RECEIVER2}>, GTRagsupplies <${process.env.GMAIL_RECEIVER3}>`,
+      to: `GTRagsupplies <${process.env.GMAIL_RECEIVER}>, GTRagsupplies <${process.env.GMAIL_RECEIVER2}>`,
       cc: `${email.cc}`,
       subject: `Quote request from ${email.from}`
     },
@@ -90,7 +90,7 @@ app.get('/QuoteSent', (req, res) => {
   res.sendFile(path.join(__dirname + '/../public/QuoteSent.html'));
 });
 
-// app.listen(process.env.PORT, () => {
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
+// app.listen(3000, () => {
   console.log('Famars are on the market');
 });
