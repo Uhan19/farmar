@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav id='NavBar'>
     <img class="NavbarLogo" src="https://dl.dropboxusercontent.com/s/mpljtt3uyusjvod/LOGO.png">
     <div class="NavbarLinkContainer Right">
       <a class="NavbarLink Selected" href="/Home">Home/Contact</a>
@@ -26,6 +26,24 @@
       <a class="NavbarLink" href="/Quote">Quote</a>
     </div>
   </nav>
+
+  <script>
+    window.onscroll = function () { myFunction() };
+
+    var navbar = document.getElementById('NavBar');
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+      console.log('navbar', navbar)
+      console.log(sticky, window.pageYOffset)
+      if (window.pageYOffset >= sticky) {
+        console.log('if statement true')
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
 
   <div class="BackgroundImageContainer">
     <img class="BackgroundImage" src="https://dl.dropboxusercontent.com/s/2xxi469szr524lc/LocationBackgroundImage.jpg" alt="Grand Topham Ranch">

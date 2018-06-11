@@ -398,6 +398,14 @@ nav {
   margin: auto;
 }
 
+.sticky {
+  background-color: #ffffff;
+  opacity: 0.9;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 #EmailInputButtonContainer {
   text-align: right;
 }
