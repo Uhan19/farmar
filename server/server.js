@@ -73,7 +73,7 @@ app.post('/Quote', (req, res) => {
     {
       text: email.body,
       from: `GTRagsupplies <${process.env.GMAIL_USERNAME}>`,
-      to: `GTRagsupplies <${process.env.GMAIL_RECEIVER}>, GTRagsupplies <${process.env.GMAIL_RECEIVER2}>`,
+      to: `GTRagsupplies <${process.env.GMAIL_RECEIVER}>, GTRagsupplies <${process.env.GMAIL_RECEIVER2}>, GTRagsupplies <${process.env.GMAIL_RECEIVER3}>`,
       cc: `${email.cc}`,
       subject: `Quote request from ${email.from}`
     },
