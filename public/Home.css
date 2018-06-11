@@ -102,6 +102,9 @@ nav {
   font-size: 1.3em;
   align-items: center;
 }
+.BodyTextLink:hover {
+  border-bottom: 2px solid #32AFE4;
+}
 .carousel {
   height: 25vw;
   width: 50vw;
@@ -235,17 +238,22 @@ nav {
   margin-right: auto;
   width: auto;
   height: 8vh;
+  display: block;
 }
 @media (max-width: 700px) {
   .NavbarLogo {
     margin-right: 15px;
+  }
+
+  .NavbarLink {
+    font-size: 1.2em;
   }
 }
 
 .NavbarLink {
   text-decoration: none;
   color: #424242;
-  font-size: 3.5vh;
+  font-size: 1.5em;
   padding-bottom: 0.1vw;
 }
 
@@ -258,6 +266,14 @@ nav {
 .NavbarLinkContainer {
   margin-left: 15px;
   margin-right: 15px;
+  display: flex;
+}
+.Right {
+  justify-content: flex-end;
+}
+
+.Left {
+  justify-content: flex-start;
 }
 
 @media (max-width: 700px) {
