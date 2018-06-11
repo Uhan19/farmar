@@ -347,13 +347,18 @@ nav {
   color: #32AFE4;
 }
 
+.img-fluid {
+  border-radius: 1vw;
+}
+
 .ItemLinkTitle {
   /*  line-height: 0%;*/
   font-size: 1.2vw;
 }
-.ProductThumnail {
+.ProductThumbnail {
   width: 20vw;
   height: 20vw;
+  border-radius: 1vw;
 }
 .ProductItemContainer {
   display: block;
@@ -394,6 +399,7 @@ nav {
   height: 5vw;
   width: 5vw;
   cursor: pointer;
+  border-radius: 1vw;
 }
 .VideoWrapper iframe {
   position: absolute;
