@@ -9,23 +9,28 @@
 
 <body>
   <nav>
-    <div class="NavbarLinkContainer">
-      <a class="NavbarLink" href="/Home">Home</a>
+    <div class="NavbarLinkLeft">
+      <img class="NavbarLogo" src="https://dl.dropboxusercontent.com/s/mpljtt3uyusjvod/LOGO.png">
     </div>
-    <div class="NavbarLinkContainer">
-      <a class="NavbarLink" href="Location">Location</a>
+    <div class="NavbarLinkRight">
+      <div class="NavbarLinkContainer">
+        <a class="NavbarLink" href="/Home">Home/Contact</a>
+      </div>
+      <div class="NavbarLinkContainer">
+        <a class="NavbarLink" href="Location">Location</a>
 
-    </div>
-    <div class="NavbarLinkContainer">
-      <a class="NavbarLink" href="/Products">Products</a>
+      </div>
+      <div class="NavbarLinkContainer">
+        <a class="NavbarLink" href="/Products">Products</a>
 
-    </div>
-    <div class="NavbarLinkContainer">
-      <a class="NavbarLink" href="/Services">Services</a>
+      </div>
+      <div class="NavbarLinkContainer">
+        <a class="NavbarLink" href="/Services">Services</a>
 
-    </div>
-    <div class="NavbarLinkContainer">
-      <a class="NavbarLink Selected" href="/Quote">Quote</a>
+      </div>
+      <div class="NavbarLinkContainer">
+        <a class="NavbarLink Selected" href="/Quote">Quote</a>
+      </div>
     </div>
   </nav>
 
@@ -42,7 +47,7 @@
 
     <div class="EmailBody">
 
-    <form class="EmailForm" action="http://localhost:3000/Quote" method="post" enctype="application/x-www-form-urlencoded">
+      <form class="EmailForm" action="http://localhost:3000/Quote" method="post" enctype="application/x-www-form-urlencoded">
 
         <div class="EmailField">
           <input class="EmailInput" name="Name" placeholder="Name">

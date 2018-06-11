@@ -57,7 +57,7 @@ nav {
   font-size: inherit;
   position: absolute;
   text-decoration: underline;
-  text-decoration-color: #e14e4e;
+  text-decoration-color: black;
 }
 .BackgroundImageContainer {
   width: 100vw;
@@ -202,6 +202,7 @@ nav {
 .HomeLink:hover {
   text-decoration: underline;
   text-decoration-color: #e14e4e;
+  cursor: pointer;
 }
 .HorizontalContainer {
   display: flex;
